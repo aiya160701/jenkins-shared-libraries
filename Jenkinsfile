@@ -1,9 +1,12 @@
+@Library('my-shared-library') _
 pipeline{
     agent any
     stages{
-        stage('Test'){
+        stage('Hello'){
             steps{
-                echo 'Testing webhook'
+                steps{
+                    helloWorld("Aiya")
+                }
             }
         }
     }
