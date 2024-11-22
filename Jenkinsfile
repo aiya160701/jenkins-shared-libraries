@@ -4,9 +4,7 @@ pipeline{
     stages{
         stage('Hello'){
             steps{
-                steps{
-                    helloWorld("Aiya")
-                }
+                helloWorld("Aiya")
             }
         }
     }
